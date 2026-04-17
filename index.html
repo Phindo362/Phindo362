@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Important Question 💖</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #no {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Will you be my girlfriend? 💖</h1>
+
+<button onclick="yes()">Yes 💖</button>
+<button id="no" onmouseover="move()">No 😭</button>
+
+<script>
+function yes() {
+  alert("YAYYY 💖💖💖");
+}
+
+function move() {
+  const button = document.getElementById("no");
+  button.style.top = Math.random() * window.innerHeight + "px";
+  button.style.left = Math.random() * window.innerWidth + "px";
+}
+</script>
+
+</body>
+</html>
